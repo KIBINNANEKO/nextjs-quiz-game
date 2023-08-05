@@ -4,11 +4,6 @@ export default function Home() {
   return (
     <Layout>
       <main>
-<<<<<<< HEAD
-        Nothing
-=======
-  
->>>>>>> main
       </main>
     </Layout>
   )

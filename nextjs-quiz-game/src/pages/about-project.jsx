@@ -1,11 +1,9 @@
-import Layout from "@/components/layout"
+import Layout from "@/components/layout/layout";
 
 export default function AboutProject() {
   return (
-	<Layout>
-		<main>
-			AboutProject
-		</main>
+	<Layout title="Page about some Project">
+		AboutProject
 	</Layout>
-  )
-}
+  );
+};

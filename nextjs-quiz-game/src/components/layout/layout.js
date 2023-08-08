@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
+import "@/scss/index.scss";
 
 function Layout({ children, title }) {
   return (

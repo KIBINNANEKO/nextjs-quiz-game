@@ -1,16 +1,13 @@
 import Layout from '@/components/layout/layout'
 import styles from "./page.module.scss"
 
-
-function Agent({props}) {
-
-	const agent = useParams()
+function Recipe({params}) {
 
 	return (
 		<Layout>
-			{props.agent}
+			{params.agent}
 		</Layout>
 	)
 }
 
-export default Agent
+export default Recipe

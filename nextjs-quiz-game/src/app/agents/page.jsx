@@ -2,10 +2,10 @@ import Layout from '@/components/layout/layout'
 import Link from 'next/link'
 
 function Recipes() {
-	const recipe = 'milk'
+	const agent = 'Gekko'
 	return (
 		<Layout title="Page about some Project">
-			<Link href={`recipes/${recipe}`}>Рецепт {recipe}</Link>
+			<Link href={`agents/${agent}`}>Рецепт {agent}</Link>
 		</Layout>
 	)
 }

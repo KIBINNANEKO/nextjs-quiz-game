@@ -5,7 +5,7 @@ function Recipes() {
 	const agent = 'Gekko'
 	return (
 		<Layout title="Page about some Project">
-			<Link href={`agents/${agent}`}>Рецепт {agent}</Link>
+			<Link href={`agents/${agent}`}>{agent}</Link>
 		</Layout>
 	)
 }

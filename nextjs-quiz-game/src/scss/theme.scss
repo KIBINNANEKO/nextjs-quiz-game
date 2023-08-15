@@ -1,0 +1,15 @@
+:root{
+	--bg-color-light: white;
+	--text-color-light: black;
+
+	--bg-color-dark: black;
+	--text-color-dark: white;
+}
+
+.theme-light{
+ 	background-color: var(--bg-color-light);
+}
+
+.theme-dark{
+	background-color: var(--bg-color-dark);
+}	

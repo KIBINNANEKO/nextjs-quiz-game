@@ -1,9 +1,11 @@
+'use client'
+
 import { createContext, useContext, useState } from "react";
 
 const ThemeContext = createContext(undefined);
 
 export const ThemeProvider = ({ children }) => {
-	const [selectedTheme, setTheme] = useState("");
+	const [selectedTheme, setTheme] = useState("dark");
 
 	return (
 		<ThemeContext.Provider
@@ -12,7 +14,9 @@ export const ThemeProvider = ({ children }) => {
 				choiceTheme: (theme) => setTheme(theme),
 			}}
 		>
-			{children}
+			<div className={`theme-${selectedTheme}`}>
+				{children}
+			</div>
 		</ThemeContext.Provider>
 	);
 };

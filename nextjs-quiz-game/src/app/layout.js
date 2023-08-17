@@ -6,7 +6,7 @@ import { ThemeProvider } from "@/context/theme";
 
 export const metadata = {
   title: 'Valorant documentation',
-  description: 'Valorant documentation',
+  description: 'Valorant documentation using official Valorant API',
 }
 
 function RootLayout({ children }) {

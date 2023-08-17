@@ -1,7 +1,7 @@
 'use client'
 
-import Link from 'next/link'
-import agents from '@/mobx/agents'
+import Link from 'next/link';
+import agents from '@/mobx/agents';
 import { fetchAllAgents } from '@/services/agents';
 import { observer } from 'mobx-react-lite';
 import { useEffect } from 'react';

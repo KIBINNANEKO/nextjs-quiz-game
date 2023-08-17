@@ -1,5 +1,3 @@
-'use client'
-
 import { makeAutoObservable } from "mobx";
 
 class Agents{

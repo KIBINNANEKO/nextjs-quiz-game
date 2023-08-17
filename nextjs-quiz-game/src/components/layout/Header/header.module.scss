@@ -1,0 +1,31 @@
+@import '@/scss/mixins.scss';
+
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@include adaptiv-value('margin-top', 20, 10, 0);
+	@include adaptiv-value('margin-bottom', 20, 10, 0);
+
+	.block_links{
+		display: flex;
+		@include adaptiv-value('gap', 30, 10, 0);
+
+		.link {
+			@include adaptiv-value('font-size', 15, 12, 0);
+		}
+	}
+
+	.settings_block{
+		display: flex;
+		@include adaptiv-value('gap', 30, 10, 0);
+
+		align-items: center;
+
+		.icon{
+			cursor: pointer;
+		}
+	}
+
+}

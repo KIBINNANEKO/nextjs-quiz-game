@@ -1,13 +1,34 @@
-import RootLayout from '@/app/layout'
-import Link from 'next/link'
+'use client'
 
-function Recipes() {
-	const agent = 'Gekko'
+import Link from 'next/link'
+import agents from '@/mobx/agents'
+import { fetchAllAgents } from '@/services/agents';
+import { observer } from 'mobx-react-lite';
+import { useEffect } from 'react';
+
+const Agents = () => {
+
+	useEffect(() => {
+		fetchAllAgents('ru-RU').then(data => {
+			agents.setAgents(data);
+		}).catch((error) => {
+			console.log('Fetch agents error: ' + error);
+		});
+	}, [])
+
+
 	return (
 		<>
-			<Link href={`agents/${agent}`}>{agent}</Link>
+			{agents.data.map(agent => 
+				{ return(
+						<Link key={agent.uuid} href={`agents/${agent?.displayName?.toLocaleLowerCase()}`}>
+							{agent.displayName}
+						</Link>
+					)
+				})
+			}
 		</>
 	)
 }
 
-export default Recipes
+export default observer(Agents);

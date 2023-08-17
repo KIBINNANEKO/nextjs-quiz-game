@@ -1,7 +1,6 @@
-import RootLayout from '@/app/layout'
 import styles from "./page.module.scss"
 
-function Recipe({params}) {
+function Agent({params}) {
 
 	return (
 		<>
@@ -10,4 +9,4 @@ function Recipe({params}) {
 	)
 }
 
-export default Recipe
+export default Agent;

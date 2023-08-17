@@ -14,9 +14,9 @@ export const ThemeProvider = ({ children }) => {
 				choiceTheme: (theme) => setTheme(theme),
 			}}
 		>
-			<div className={`theme-${selectedTheme}`}>
+			<body className={`theme-${selectedTheme}`}>
 				{children}
-			</div>
+			</body>
 		</ThemeContext.Provider>
 	);
 };

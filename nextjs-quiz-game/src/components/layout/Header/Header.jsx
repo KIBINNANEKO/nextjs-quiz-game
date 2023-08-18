@@ -16,8 +16,8 @@ function Header() {
 
 			<div className={styles.block_links}>
 				<Link className={styles.link} href='/agents'>Agents</Link>
-				<a className={styles.link} href="https://github.com/KIBINNANEKO/nextjs-valorant-docs">GitHub</a>
-				<a className={styles.link} href="https://dash.valorant-api.com/">API</a>
+				<a className={styles.link} target="_blank" href="https://github.com/KIBINNANEKO/nextjs-valorant-docs">GitHub</a>
+				<a className={styles.link} target="_blank" href="https://dash.valorant-api.com/">API</a>
 			</div>
 
 			<div className={styles.settings_block}>

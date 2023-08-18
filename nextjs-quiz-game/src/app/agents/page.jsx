@@ -5,11 +5,14 @@ import agents from '@/mobx/agents';
 import { fetchAllAgents } from '@/services/agents';
 import { observer } from 'mobx-react-lite';
 import { useEffect } from 'react';
+import { useLanguage } from '@/context/language';
 
 const Agents = () => {
 
+	const { selectedLanguage } = useLanguage()
+
 	useEffect(() => {
-		fetchAllAgents('ru-RU').then(data => {
+		fetchAllAgents(selectedLanguage).then(data => {
 			agents.setAgents(data);
 		}).catch((error) => {
 			console.log('Fetch agents error: ' + error);

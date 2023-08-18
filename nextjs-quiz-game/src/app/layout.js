@@ -3,6 +3,7 @@ import Header from "../components/layout/Header/Header";
 import Footer from "../components/layout/Footer/Footer";
 import "@/scss/index.scss";
 import { ThemeProvider } from "@/context/theme";
+import { LanguageProvider } from "@/context/language";
 
 export const metadata = {
   title: 'Valorant documentation',
@@ -14,13 +15,15 @@ function RootLayout({ children }) {
   return (
     <html lang="en">
         <ThemeProvider>
-          <div className="wrapper">
-            <Header/>
-              <main>
-                {children}
-              </main>
-            <Footer/>
-          </div>
+          <LanguageProvider>
+            <div className="wrapper">
+              <Header/>
+                <main>
+                  {children}
+                </main>
+              <Footer/>
+            </div>
+          </LanguageProvider>
         </ThemeProvider>
     </html>
   );

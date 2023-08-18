@@ -4,12 +4,14 @@
 	font-family: $dropdownFont;
 	font-size: 20px;
 	position: absolute;
-	transform: translate(-130%, -15%);
+	transform: translate(-125%, -20%);
+	padding: 10px;
+	border-radius: 6px;
 
 	div{
 		cursor: pointer;
 		transition: 0.3s;
-		margin-bottom: 5px;
+		margin-bottom: 7px;
 
 		&:hover{
 			color: $valorantColor;

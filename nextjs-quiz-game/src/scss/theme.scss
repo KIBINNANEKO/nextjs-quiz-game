@@ -13,6 +13,11 @@
 	a{
 		color: var(--text-color-light);
 	}
+
+	div[theme="dropdown"]{
+		background-color: var(--bg-color-light);
+		border: 1px solid var(--bg-color-dark);
+	}
 }
 
 .theme-dark{
@@ -21,5 +26,10 @@
 
 	a{
 		color: var(--text-color-dark);
+	}
+
+	div[theme="dropdown"] {
+		background-color: var(--bg-color-dark);
+		border: 1px solid var(--bg-color-light);
 	}
 }	

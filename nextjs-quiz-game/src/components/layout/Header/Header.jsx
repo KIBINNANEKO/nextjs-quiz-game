@@ -3,28 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "@/context/theme";
 import styles from './header.module.scss'
-import DropdownList from "@/app/agents/components/DropdownList";
-import { useEffect, useRef, useState } from "react";
+import LanguageToggle from "./components/LanguageToggle/LanguageToggle";
 
 function Header() {
 
 	const { selectedTheme, choiceTheme } = useTheme();	
-
-	const languageRef = useRef();
-	const [isVisibleDropdown, setIsVisibleDropdown] = useState(false);
-
-	function handleDropdown(){
-		setIsVisibleDropdown(prev => !prev)
-	}
-
-	useEffect(() => {
-		const langIconElement = languageRef.current;
-		langIconElement.addEventListener("click", handleDropdown)
-
-		return () => {
-			langIconElement.removeEventListener("click", handleDropdown)
-		}
-	}, [])
 
 	return (
 		<header className={styles.header}>
@@ -39,21 +22,10 @@ function Header() {
 			</div>
 
 			<div className={styles.settings_block}>
-				<div className={styles.language} ref={languageRef}>
-					<Image 
-						className={styles.icon}
-						width='28' 
-						height='28' 
-						src='/language.svg' 
-						alt="logo" 
-					/>
-					{
-						isVisibleDropdown ? 
-						<DropdownList />
-						:
-						null
-					}	
-				</div>
+				
+				<LanguageToggle/>
+
+
 				<div>
 					{selectedTheme === 'dark' ?
 						<Image 

@@ -17,7 +17,7 @@ const Agents = () => {
 		}).catch((error) => {
 			console.log('Fetch agents error: ' + error);
 		});
-	}, [])
+	}, [selectedLanguage])
 
 	return (
 		<>
@@ -25,6 +25,7 @@ const Agents = () => {
 				{ return(
 						<Link key={agent.uuid} href={`agents/${agent?.displayName?.toLocaleLowerCase()}`}>
 							<h2>{agent.displayName}</h2>
+							<h4>{agent.description}</h4>
 						</Link>
 					)
 				})

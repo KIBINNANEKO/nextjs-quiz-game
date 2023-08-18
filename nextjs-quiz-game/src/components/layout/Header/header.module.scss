@@ -22,14 +22,6 @@
 		@include adaptiv-value('gap', 30, 10, 0);
 
 		align-items: center;
-
-		.icon{
-			cursor: pointer;
-		}
-
-		.language{
-			position: relative;
-		}
 	}
 
 }

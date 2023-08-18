@@ -1,12 +1,16 @@
 import { useLanguage } from "@/context/language";
 import styles from './dropdown.module.scss';
-import { useEffect } from "react";
 
 function DropdownList() {
 
-	const {selectedLanguage, choiceLanguage} = useLanguage()
+	const { choiceLanguage} = useLanguage()
 
-	const languages = [{ form: 'de-DE', language: 'Deutsch' }, { form: 'en-US', language: 'English' }, { form: 'fr-FR', language: 'Français' }, { form: 'pl-PL', language: 'Polski' }, { form: 'ru-RU', language: 'Русский' }];
+	const languages = 
+		[{ form: 'de-DE', language: 'Deutsch' }, 
+		{ form: 'en-US', language: 'English' },
+		{ form: 'fr-FR', language: 'Français'}, 
+		{ form: 'pl-PL', language: 'Polski'  }, 
+		{ form: 'ru-RU', language: 'Русский' }];
 
 	return (
 		<div className={styles.dropdown + ' dropdown'} theme="dropdown">

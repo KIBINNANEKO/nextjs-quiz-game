@@ -1,3 +1,5 @@
+'use client'
+
 import DropdownList from '@/app/agents/components/DropdownList'
 import Image from 'next/image'
 import styles from './language-toggle.module.scss'

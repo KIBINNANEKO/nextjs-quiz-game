@@ -23,9 +23,8 @@ const Agents = () => {
 		<>
 			{agents?.data?.map(agent => 
 				{ return(
-						<Link key={agent.uuid} href={`agents/${agent?.displayName?.toLocaleLowerCase()}`}>
+						<Link key={agent.uuid} href={`agents/${agent.uuid}`}>
 							<h2>{agent.displayName}</h2>
-							<h4>{agent.description}</h4>
 						</Link>
 					)
 				})

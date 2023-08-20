@@ -12,13 +12,12 @@ export const LanguageProvider = ({ children }) => {
 
 		if (langFromStorage){
 			setLanguage(langFromStorage);
-			console.log(langFromStorage);
 		}
 	}, []);
 
 	function choiceLanguage(language){
 		localStorage.setItem('language', language);
-		console.log(language);
+		location.replace('/agents');
 		location.reload();
 	}
 

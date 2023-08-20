@@ -9,15 +9,13 @@ import { useLanguage } from '@/context/language';
 
 const Agents = () => {
 
-	const { selectedLanguage } = useLanguage()
+	const { selectedLanguage } = useLanguage();
 
 	useEffect(() => {
-		fetchAllAgents(selectedLanguage).then(data => {
-			agents.setAgents(data);
-		}).catch((error) => {
-			console.log('Fetch agents error: ' + error);
-		});
-	}, [selectedLanguage])
+		fetchAllAgents(selectedLanguage)
+		.then(data => { agents.setAgents(data) })
+ 		.catch(error => { console.log(error) })
+	}, [selectedLanguage]);
 
 	return (
 		<>

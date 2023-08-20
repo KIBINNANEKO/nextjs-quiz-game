@@ -29,7 +29,7 @@ export default async function Page({ params }) {
 	
 	return (
 		<>
-			{displayName + ' ' + description}
+			{displayName + ': ' + description}
 		</>
 	);
 };

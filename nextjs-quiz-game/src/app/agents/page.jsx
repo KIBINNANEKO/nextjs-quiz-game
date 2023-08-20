@@ -23,7 +23,7 @@ const Agents = () => {
 		<>
 			{agents?.data?.map(agent => 
 				{ return(
-						<Link key={agent.uuid} href={`agents/${agent.uuid}`}>
+						<Link key={agent.uuid} href={`agents/${agent.uuid}/${selectedLanguage}`}>
 							<h2>{agent.displayName}</h2>
 						</Link>
 					)

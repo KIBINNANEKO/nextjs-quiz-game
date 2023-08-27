@@ -1,14 +1,20 @@
 @import '../../../scss/mixins.scss';
 
 .page{
+	display: flex;
+	flex-direction: row;
+
+	@media(max-width: 900px){
+		flex-direction: column-reverse;
+	}
 
 	.block_1{
 
 		.present_agent{
 
 			.agent_icon{
-				@include adaptiv-value('width', 200, 100, 0);
-				@include adaptiv-value('height', 200, 100, 0);
+				@include adaptiv-value('width', 150, 100, 0);
+				@include adaptiv-value('height', 150, 100, 0);
 			}
 
 			.agent_name{
@@ -60,6 +66,14 @@
 	}
 
 	.block_2{
+		position: relative;
 
+		.background{
+			position: absolute;
+			top: 35%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: -1;
+		}
 	}
 }

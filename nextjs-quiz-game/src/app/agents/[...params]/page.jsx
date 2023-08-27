@@ -35,7 +35,7 @@ export default async function Page({ params }) {
 			<div className={styles.block_1}>
 				<div className={styles.present_agent}>
 					<div>
-						<Image src={displayIcon} alt={displayName} width={120} height={120} className={styles.agent_icon} />
+						<Image src={displayIcon} alt={displayName} width={200} height={200} className={styles.agent_icon} />
 					</div>
 					<div className={styles.agent_name}><h1>{displayName}</h1></div>
 				</div>
@@ -64,7 +64,8 @@ export default async function Page({ params }) {
 				</div>
 			</div>
 			<div className={styles.block_2}> 
-				
+				<Image src={background} alt={displayName} width={900} height={900} className={styles.background}/>
+				<Image src={fullPortrait} alt={displayName} width={900} height={900} className={styles.image} />
 			</div>
 		</div>
 	);

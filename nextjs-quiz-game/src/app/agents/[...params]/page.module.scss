@@ -1,0 +1,65 @@
+@import '../../../scss/mixins.scss';
+
+.page{
+
+	.block_1{
+
+		.present_agent{
+
+			.agent_icon{
+				@include adaptiv-value('width', 200, 100, 0);
+				@include adaptiv-value('height', 200, 100, 0);
+			}
+
+			.agent_name{
+
+			}
+		}
+
+		.present_role{
+
+			.role_icon{
+
+			}
+
+			.role_name{
+
+			}
+		}
+
+		.description{
+
+		}
+
+		.abilities_block{
+
+			.abilities_title{
+
+			}
+
+			.abilities_items{
+
+				.ability_item{
+
+					.ability_icon{
+
+					}
+
+					.abilities_text{
+						.ability_name{
+
+						}
+
+						.ability_description{
+
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.block_2{
+
+	}
+}

@@ -18,7 +18,7 @@ export default async function Page({ params }) {
 	let { 
 		displayName, 
 		description, 
-		displayIcon, 
+		killfeedPortrait, 
 		fullPortrait, 
 		background, 
 		abilities,
@@ -35,7 +35,7 @@ export default async function Page({ params }) {
 			<div className={styles.block_1}>
 				<div className={styles.present_agent}>
 					<div>
-						<Image src={displayIcon} alt={displayName} width={200} height={200} className={styles.agent_icon} />
+						<Image src={killfeedPortrait} alt={displayName} width={192} height={96} className={styles.agent_icon + ' bg-icon'} theme="bg-icon"/>
 					</div>
 					<div className={styles.agent_name}><h1>{displayName}</h1></div>
 				</div>

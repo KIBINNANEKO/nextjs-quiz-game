@@ -1,5 +1,12 @@
 # Valorant Characters Documentation
 
+## How it should work?
+
+0. The project is built using SSG (Static Site Generation), which allows generating all the necessary pages once and serving them to the user on request. This is an advantage over SSR, as it saves a significant amount of traffic, since with SSR, the page would be regenerated for each user on every request.
+1. The user visits the homepage and sees the names of all agents from the game.
+2. By selecting any of them, they receive a pre-rendered page from the server that quickly displays.
+3. The user has the ability to switch the website's color theme and language.
+
 ## Technology stack:
 
 - HTML, SCSS-modules;

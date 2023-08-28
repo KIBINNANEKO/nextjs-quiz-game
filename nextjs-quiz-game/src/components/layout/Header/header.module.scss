@@ -1,4 +1,5 @@
 @import '@/scss/mixins.scss';
+@import '@/scss/var.scss';
 
 .header{
 	display: flex;
@@ -14,6 +15,11 @@
 
 		.link {
 			@include adaptiv-value('font-size', 15, 12, 0);
+			transition: 0.3s;
+
+			&:hover{
+				color: $valorantColor
+			}
 		}
 	}
 

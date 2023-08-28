@@ -6,9 +6,9 @@ import { fetchAllAgents } from '@/services/agents';
 import { observer } from 'mobx-react-lite';
 import { useEffect } from 'react';
 import { useLanguage } from '@/context/language';
+import styles from './page.module.scss';
 
 const Agents = () => {
-
 	const { selectedLanguage } = useLanguage();
 
 	useEffect(() => {
@@ -18,17 +18,17 @@ const Agents = () => {
 	}, [selectedLanguage]);
 
 	return (
-		<>
+		<div className={styles.titles}>
 			{agents?.data?.map(agent => 
 				{ return(
 						<Link key={agent.uuid} href={`agents/${agent.uuid}/${selectedLanguage}`}>
-							<h2>{agent.displayName}</h2>
+							<h2 className={styles.title}>{agent.displayName}</h2>
 						</Link>
 					)
 				})
 			}
-		</>
+		</div>
 	)
-}
+};
 
 export default observer(Agents);

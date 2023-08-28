@@ -15,10 +15,15 @@ body{
 		display: flex;
 		flex-direction: column;
 
-		overflow: hidden;
+		overflow-x: hidden;
 	}
 
 	main{
 		flex: 1 1 auto;
 	}
+
+		.bg-icon{
+			height: 96px;
+			width: 192px;
+		}
 }

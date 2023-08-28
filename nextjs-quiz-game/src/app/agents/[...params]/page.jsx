@@ -35,7 +35,7 @@ export default async function Page({ params }) {
 			<div className={styles.block_1}>
 				<div className={styles.present_agent}>
 					<div>
-						<Image src={killfeedPortrait} alt={displayName} width={192} height={96} className={styles.agent_icon + ' bg-icon'} theme="bg-icon"/>
+						<Image src={killfeedPortrait} alt={displayName} width={288} height={144} className={styles.agent_icon + ' bg-icon'} theme="bg-icon"/>
 					</div>
 					<div className={styles.agent_name}><h1>{displayName}</h1></div>
 				</div>
@@ -64,7 +64,7 @@ export default async function Page({ params }) {
 				</div>
 			</div>
 			<div className={styles.block_2}> 
-				<Image src={background} alt={displayName} width={900} height={900} className={styles.background}/>
+				<Image src={background} alt={displayName} width={700} height={850} className={styles.background}/>
 				<Image src={fullPortrait} alt={displayName} width={900} height={900} className={styles.image} />
 			</div>
 		</div>

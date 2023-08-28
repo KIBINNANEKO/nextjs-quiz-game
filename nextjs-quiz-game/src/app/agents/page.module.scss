@@ -1,0 +1,16 @@
+@import '@/scss/var.scss';
+
+.titles{
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.title{
+	font-size: 100px;
+	transition: 0.4s;
+
+	&:hover{
+		color: $valorantColor
+	}
+}
